@@ -1,1 +1,23 @@
+[package]
+name = "DecentralizedSocialMedia"
+version = "1.0.0"
+authors = ["Your Name <your.email@example.com>"]
+
+[addresses]
+# Your named address placeholder (replace with deployment address)
+my_addr = "0xe708da690a22af5ac3684feade71dc34cfe30deef3b1e269c5aee39a18961153" # This will be replaced during deployment
+
+# Standard Aptos addresses
+aptos_framework = "0x1"
+std = "0x1"
+move_std = "0x1"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "main" }
+
+[dev-addresses]
+# Local testing addresses
+my_addr = "0x123" # For local development
+
+[dev-dependencies]
 
